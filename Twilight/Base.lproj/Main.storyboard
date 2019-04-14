@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--发现-->
+        <scene sceneID="CcD-hT-zLj">
+            <objects>
+                <viewController storyboardIdentifier="Discovery_vc" title="发现" id="k5T-Xi-mZc" customClass="Discovery_vc" customModule="Twilight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7sD-Bs-sm7"/>
+                        <viewControllerLayoutGuide type="bottom" id="LUZ-EM-LXe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="44I-Ge-RKH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afu-kz-QM2">
+                                <rect key="frame" x="147.5" y="318" width="80" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="商品测试下">
+                                    <color key="titleColor" red="1" green="0.2156862745" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="afu-kz-QM2" firstAttribute="centerX" secondItem="44I-Ge-RKH" secondAttribute="centerX" id="ZUT-Xb-M3o"/>
+                            <constraint firstItem="afu-kz-QM2" firstAttribute="centerY" secondItem="44I-Ge-RKH" secondAttribute="centerY" id="idG-96-fuF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="test_btn" destination="afu-kz-QM2" id="1rq-Xi-Ybl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gam-Z4-bZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="143"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="Ufe-ZJ-n8G">
+            <objects>
+                <viewController storyboardIdentifier="Shopcart_vc" title="购物车" id="l7z-vS-M3B" customClass="Shopcart_vc" customModule="Twilight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RcO-YS-vrE"/>
+                        <viewControllerLayoutGuide type="bottom" id="v8B-gm-a03"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BxV-DE-XQS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs8-QB-xaa">
+                                <rect key="frame" x="155.5" y="318" width="64" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="首页试下">
+                                    <color key="titleColor" red="1" green="0.2156862745" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cs8-QB-xaa" firstAttribute="centerY" secondItem="BxV-DE-XQS" secondAttribute="centerY" id="Zt9-HX-grY"/>
+                            <constraint firstItem="Cs8-QB-xaa" firstAttribute="centerX" secondItem="BxV-DE-XQS" secondAttribute="centerX" id="ZtG-LH-IW2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="test_btn" destination="Cs8-QB-xaa" id="yEc-XX-hbj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kaf-8w-QSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="143"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="brZ-I1-NaA">
+            <objects>
+                <viewController storyboardIdentifier="Me_vc" title="我的" id="m75-YY-Rzg" customClass="Me_vc" customModule="Twilight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zgh-dz-tbI"/>
+                        <viewControllerLayoutGuide type="bottom" id="oiV-nT-bRn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vjj-cO-2id">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmM-2Z-KGh">
+                                <rect key="frame" x="139.5" y="318" width="96" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="去登陆测试下">
+                                    <color key="titleColor" red="1" green="0.21568627450980393" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MmM-2Z-KGh" firstAttribute="centerY" secondItem="Vjj-cO-2id" secondAttribute="centerY" id="E4T-AM-p2F"/>
+                            <constraint firstItem="MmM-2Z-KGh" firstAttribute="centerX" secondItem="Vjj-cO-2id" secondAttribute="centerX" id="u0m-ke-NvI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="test_btn" destination="MmM-2Z-KGh" id="Nqt-oD-dA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kt4-CW-FlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="143"/>
+        </scene>
+    </scenes>
+</document>
